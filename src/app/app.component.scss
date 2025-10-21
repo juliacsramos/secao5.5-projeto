@@ -1,0 +1,32 @@
+.list{
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.item{
+    width: 70%;
+    padding: 5px 0;
+    background-color: rgb(236, 220, 245);
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+
+    &__name{
+        font-weight: bold;
+    }
+    &__age{
+        font-style: italic;
+    }
+    &--odd{
+        background-color: rgb(245, 154, 233);
+    }
+    &--highlighted{
+        font-weight: bolder;
+        background-color: rgb(255, 37, 244);
+        color: white;
+    }
+}
