@@ -1,0 +1,15 @@
+<div 
+  class="item"
+
+  [class.item--odd]="isOdd"
+  [class.item--highlighted]="isSelected"
+  (click)="selectPerson()">
+
+    <p class="item--name">{{personIndex}} - {{personName}}</p>
+    <p class="item--age">{{personAge}}</p>
+    <p class="item--city">{{personCity}}</p>
+    <p *ngIf="isFirst">Este é o primeiro item da lista.</p>
+    <p *ngIf="isLast">Este é o último item da lista.</p>
+
+</div> <!-- não pode usar dois ng no mesmo elemento (ex: ngIf e ngFor)-->
+
